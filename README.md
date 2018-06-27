@@ -1,27 +1,15 @@
-# 批处理工具集
+# AutoScript
 
 ## 目录
 
-- [AutoStorePDB](#autostorepdb)
-  - [GetGitHash](#getgithash) 获取Git提交hash值
-  - [StorePdb](#storepdb) 存储pdb文件
-  - [LookGUID](#lookguid) 查看exe/dll文件GUID
+- [AutoStorePDB](./AutoStorePDB/AutoStorePDB.md)
+  - 自动存储PDB文件，实现个人离线的Symbols
+- ​
 
-###AutoStorePDB
 
-意在解决pdb找不到问题，提供一个解决思路。
+## 记录
 
-#### GetGitHash
+- [2018.06.22 xiaozp] 添加python版本的AutoStorePDB脚本
+- [2018.04.25 xiaozp] 添加AutoStorePDB
 
-获取git最新提交的hash值，并写入文件。
-
-#### StorePdb
-
-将路径下的pdb文件拷贝到指定目录，同时该pdb文件名会被改写为带GUID信息。
-
-#### LookGUID
-
-查看当前路径下exe/dll文件的GUID。
-
-注：只有VS编译出的文件才带有GUID信息。
 
