@@ -24,3 +24,7 @@
 ## StorePDB
 
 将路径下的pdb文件拷贝到指定目录，同时该pdb文件名会被改写为带hash值。python脚本
+
+## SetPDBName
+
+图形界面，功能同StorePDB。python脚本
