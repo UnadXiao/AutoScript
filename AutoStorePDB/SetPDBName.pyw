@@ -27,15 +27,16 @@ def getDir():
         filedir.set(fd + '/')
 
 def setPDBName():
-    fn = os.path.splitext(filename.get())[0] + '.pdb'
-    if os.path.exists(fn):
+    fn = filename.get()
+    fpdb = os.path.splitext(filename.get())[0] + '.pdb'
+    if os.path.exists(fpdb):
         hmd5 = hashlib.md5()
         f = open(fn, 'rb')
         hmd5.update(f.read())
         md5.set(hmd5.hexdigest())
         f.close()
         target = filedir.get() + datetime.datetime.now().strftime('%m%d') + '_' + hmd5.hexdigest() + '.pdb'
-        shutil.copy(fn, target)   
+        shutil.copy(fpdb, target)   
 
 
 Label(root, text = '文件名:').grid(row = 0, column = 0, sticky = W)
