@@ -8,10 +8,13 @@
   - 计算两个像素点的色差DeltaE
 - Take Product Method
   - 帮同学写的一个全组合取商品找最优方法
+- 32To24
+  - 图像格式转换（留个坑）
 
 
 ## 记录
 
+- [2018.08.06 xiaozp] 添加32To24
 - [2018.07.31 xiaozp] 添加TakeProductMethod
 - [2018.07.10 xiapzp] 添加CalcuDeltaE
 - [2018.06.22 xiaozp] 添加python版本的AutoStorePDB脚本
